@@ -1,0 +1,6 @@
+@echo off
+echo Starting ArbFlo Backend...
+start cmd /k "cd backend && uvicorn api:app --reload"
+
+echo Starting ArbFlo Frontend...
+start cmd /k "cd frontend && npm run dev"
